@@ -33,6 +33,7 @@ background-color:#424242;
 	display:inline-block;
 	background-size:cover !important;
 	overflow:hidden;
+	vertical-align:top;
 }
 
 .archive:hover > .pop-message{
@@ -75,4 +76,3 @@ a:visited{
 footer ul{
 	padding:20px;
 }
-
