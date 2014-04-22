@@ -10,6 +10,10 @@
 	src: url('./fonts/space.ttf');
 }
 
+body{
+	background:black;
+}
+
 #flappy{
 	box-shadow:5px 0px 0px 0px rgb(42,42,42),
 				10px 0px 0px 0px rgb(42,42,42),
@@ -195,8 +199,20 @@
 	-webkit-transform-style: preserve-3d;
 }
 
+#surround{
+	width:1024px;
+	height:100px;
+	background:#000;
+	margin:0px auto;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	overflow:hidden;
+}
+
 @keyframes flap{
-	0%{bottom:300px;transform:rotate(0deg);}
+	0%{bottom:300px;transform:rotate(0deg);transform-origin:200% 200%;}
 	50%{bottom:500px;transform:rotate(-10deg);}
 	100%{bottom:300px;transform:rotate(0deg);}
 }
@@ -209,12 +225,14 @@
 
 #gamearea{
 	overflow:hidden;
+	width:1024px;
+	min-width:1024px;
 	max-width:1024px;
 	background:#0099CC;
 	margin:0px auto;
 	position:absolute;
 	top:0px;
-	bottom:0px;
+	bottom:100px;
 	left:0px;
 	right:0px;
 }
@@ -379,6 +397,22 @@
 	to{right:150%;}
 }
 
+@keyframes fadeout{
+	from{opacity:1;}
+	to{opacity:0;}
+}
+@-webkit-keyframes fadeout{
+	from{opacity:1;}
+	to{opacity:0;}
+}
+
+#name{
+	animation:fadeout 2s forwards;
+	-webkit-animation:fadeout 2s forwards;
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+
 .neck-pipe{
 	width:100px;
 	height:30px;
@@ -430,9 +464,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', end
 	width:1500px;
 	min-width:1500px;
 	max-width:1500px;
-	animation:bars 25s 7s forwards;
+	animation:bars 25s 3s forwards;
 	animation-play-state:paused;
-	-webkit-animation:bars 25s 7s forwards;
+	-webkit-animation:bars 25s 3s forwards;
 	-webkit-animation-play-state:paused;
 }
 
@@ -480,8 +514,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', end
 	min-width:600px;
 	max-width:600px;
 	left:150%;
-	animation:bugger 40s 12s forwards;
-	-webkit-animation:bugger 40s 12s forwards;
+	animation:bugger 40s 10s forwards;
+	-webkit-animation:bugger 40s 10s forwards;
 	animation-play-state:paused;
 	-webkit-animation-play-state:paused;
 }
@@ -526,19 +560,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', end
 
 .b1{
 animation:bugs 5s linear infinite;
--webkit-animation:bugs 2s linear infinite;
+-webkit-animation:bugs 5s linear infinite;
 }
 .b2{
 animation:bugs 5s 500ms linear infinite;
--webkit-animation:bugs 2s 500ms linear infinite;
+-webkit-animation:bugs 5s 500ms linear infinite;
 }
 .b3{
 animation:bugs 5s 1000ms linear infinite;
--webkit-animation:bugs 2s 1000ms linear infinite;
+-webkit-animation:bugs 5s 1000ms linear infinite;
 }
 .b4{
 animation:bugs 5s 1500ms linear infinite;
--webkit-animation:bugs 2s 1500ms linear infinite;
+-webkit-animation:bugs 5s 1500ms linear infinite;
 }
 
 .pl-bug{
@@ -649,6 +683,21 @@ animation:bugs 5s 1500ms linear infinite;
 	right:-50px;
 	bottom:95px;
 	box-shadow:5px 0 0 0 #2a2a2a,10px 0 0 0 #2a2a2a,15px 0 0 0 #2a2a2a,20px 0 0 0 #2a2a2a,25px 0 0 0 #2a2a2a,-10px 5px 0 0 #2a2a2a,-5px 5px 0 0 #2a2a2a,0 5px 0 0 #FFF,5px 5px 0 0 #FFF,10px 5px 0 0 yellowgreen,15px 5px 0 0 yellowgreen,20px 5px 0 0 yellowgreen,25px 5px 0 0 yellowgreen,30px 5px 0 0 #2a2a2a,35px 5px 0 0 #2a2a2a,-15px 10px 0 0 #2a2a2a,-10px 10px 0 0 #FFF,-5px 10px 0 0 #FFF,0 10px 0 0 #FFF,5px 10px 0 0 #FFF,10px 10px 0 0 yellowgreen,15px 10px 0 0 yellowgreen,20px 10px 0 0 yellowgreen,25px 10px 0 0 yellowgreen,30px 10px 0 0 #FFF,35px 10px 0 0 #FFF,40px 10px 0 0 #2a2a2a,-20px 15px 0 0 #2a2a2a,-15px 15px 0 0 #FFF,-10px 15px 0 0 #FFF,-5px 15px 0 0 #FFF,0 15px 0 0 #FFF,5px 15px 0 0 yellowgreen,10px 15px 0 0 yellowgreen,15px 15px 0 0 yellowgreen,20px 15px 0 0 yellowgreen,25px 15px 0 0 yellowgreen,30px 15px 0 0 yellowgreen,35px 15px 0 0 #FFF,40px 15px 0 0 #FFF,45px 15px 0 0 #2a2a2a,-20px 20px 0 0 #2a2a2a,-15px 20px 0 0 yellowgreen,-10px 20px 0 0 yellowgreen,-5px 20px 0 0 yellowgreen,0 20px 0 0 yellowgreen,5px 20px 0 0 yellowgreen,10px 20px 0 0 #FFF,15px 20px 0 0 #FFF,20px 20px 0 0 #FFF,25px 20px 0 0 #FFF,30px 20px 0 0 yellowgreen,35px 20px 0 0 yellowgreen,40px 20px 0 0 #FFF,45px 20px 0 0 #2a2a2a,-25px 25px 0 0 #2a2a2a,-20px 25px 0 0 yellowgreen,-15px 25px 0 0 #FFF,-10px 25px 0 0 #FFF,-5px 25px 0 0 yellowgreen,0 25px 0 0 yellowgreen,5px 25px 0 0 #FFF,10px 25px 0 0 #FFF,15px 25px 0 0 #FFF,20px 25px 0 0 #FFF,25px 25px 0 0 #FFF,30px 25px 0 0 #FFF,35px 25px 0 0 yellowgreen,40px 25px 0 0 yellowgreen,45px 25px 0 0 yellowgreen,50px 25px 0 0 #2a2a2a,-25px 30px 0 0 #2a2a2a,-20px 30px 0 0 #FFF,-15px 30px 0 0 #FFF,-10px 30px 0 0 #FFF,-5px 30px 0 0 #FFF,0 30px 0 0 yellowgreen,5px 30px 0 0 #FFF,10px 30px 0 0 #FFF,15px 30px 0 0 #FFF,20px 30px 0 0 #FFF,25px 30px 0 0 #FFF,30px 30px 0 0 #FFF,35px 30px 0 0 yellowgreen,40px 30px 0 0 yellowgreen,45px 30px 0 0 yellowgreen,50px 30px 0 0 #2a2a2a,-25px 35px 0 0 #2a2a2a,-20px 35px 0 0 #FFF,-15px 35px 0 0 #FFF,-10px 35px 0 0 #FFF,-5px 35px 0 0 #FFF,0 35px 0 0 yellowgreen,5px 35px 0 0 #FFF,10px 35px 0 0 #FFF,15px 35px 0 0 #FFF,20px 35px 0 0 #FFF,25px 35px 0 0 #FFF,30px 35px 0 0 #FFF,35px 35px 0 0 yellowgreen,40px 35px 0 0 yellowgreen,45px 35px 0 0 #FFF,50px 35px 0 0 #2a2a2a,-25px 40px 0 0 #2a2a2a,-20px 40px 0 0 #FFF,-15px 40px 0 0 #FFF,-10px 40px 0 0 #FFF,-5px 40px 0 0 #FFF,0 40px 0 0 yellowgreen,5px 40px 0 0 yellowgreen,10px 40px 0 0 #FFF,15px 40px 0 0 #FFF,20px 40px 0 0 #FFF,25px 40px 0 0 #FFF,30px 40px 0 0 yellowgreen,35px 40px 0 0 yellowgreen,40px 40px 0 0 #FFF,45px 40px 0 0 #FFF,50px 40px 0 0 #2a2a2a,-25px 45px 0 0 #2a2a2a,-20px 45px 0 0 yellowgreen,-15px 45px 0 0 #FFF,-10px 45px 0 0 #FFF,-5px 45px 0 0 yellowgreen,0 45px 0 0 yellowgreen,5px 45px 0 0 yellowgreen,10px 45px 0 0 yellowgreen,15px 45px 0 0 yellowgreen,20px 45px 0 0 yellowgreen,25px 45px 0 0 yellowgreen,30px 45px 0 0 yellowgreen,35px 45px 0 0 yellowgreen,40px 45px 0 0 #FFF,45px 45px 0 0 #FFF,50px 45px 0 0 #2a2a2a,-25px 50px 0 0 #2a2a2a,-20px 50px 0 0 yellowgreen,-15px 50px 0 0 yellowgreen,-10px 50px 0 0 yellowgreen,-5px 50px 0 0 #2a2a2a,0 50px 0 0 #2a2a2a,5px 50px 0 0 #2a2a2a,10px 50px 0 0 #2a2a2a,15px 50px 0 0 #2a2a2a,20px 50px 0 0 #2a2a2a,25px 50px 0 0 #2a2a2a,30px 50px 0 0 #2a2a2a,35px 50px 0 0 yellowgreen,40px 50px 0 0 yellowgreen,45px 50px 0 0 #FFF,50px 50px 0 0 #2a2a2a,-20px 55px 0 0 #2a2a2a,-15px 55px 0 0 #2a2a2a,-10px 55px 0 0 #2a2a2a,-5px 55px 0 0 #FFF,0 55px 0 0 #FFF,5px 55px 0 0 #2a2a2a,10px 55px 0 0 #FFF,15px 55px 0 0 #FFF,20px 55px 0 0 #2a2a2a,25px 55px 0 0 #FFF,30px 55px 0 0 #FFF,35px 55px 0 0 #2a2a2a,40px 55px 0 0 #2a2a2a,45px 55px 0 0 #2a2a2a,-15px 60px 0 0 #2a2a2a,-10px 60px 0 0 #FFF,-5px 60px 0 0 #FFF,0 60px 0 0 #FFF,5px 60px 0 0 #2a2a2a,10px 60px 0 0 #FFF,15px 60px 0 0 #FFF,20px 60px 0 0 #2a2a2a,25px 60px 0 0 #FFF,30px 60px 0 0 #FFF,35px 60px 0 0 #FFF,40px 60px 0 0 #2a2a2a,-15px 65px 0 0 #2a2a2a,-10px 65px 0 0 #FFF,-5px 65px 0 0 #FFF,0 65px 0 0 #FFF,5px 65px 0 0 #FFF,10px 65px 0 0 #FFF,15px 65px 0 0 #FFF,20px 65px 0 0 #FFF,25px 65px 0 0 #FFF,30px 65px 0 0 #FFF,35px 65px 0 0 #FFF,40px 65px 0 0 #2a2a2a,-10px 70px 0 0 #2a2a2a,-5px 70px 0 0 #FFF,0 70px 0 0 #FFF,5px 70px 0 0 #FFF,10px 70px 0 0 #FFF,15px 70px 0 0 #FFF,20px 70px 0 0 #FFF,25px 70px 0 0 #FFF,30px 70px 0 0 #FFF,35px 70px 0 0 #2a2a2a,-5px 75px 0 0 #2a2a2a,0 75px 0 0 #2a2a2a,5px 75px 0 0 #2a2a2a,10px 75px 0 0 #2a2a2a,15px 75px 0 0 #2a2a2a,20px 75px 0 0 #2a2a2a,25px 75px 0 0 #2a2a2a,30px 75px 0 0 #2a2a2a;
+	transition:transform 500ms;
+	-webkit-transition:transform 500ms;
+}
+
+#mushroom2:hover{
+	transform:translateY(-100px);
+	-webkit-transform:translateY(-100px);
+}
+#mushcover{
+	display:inline-block;
+	width:100px;
+	height:100px;
+	position:relative;
+	top:-20px;
+	left:-20px;
 }
 
 @keyframes mushroom{
@@ -658,4 +707,417 @@ animation:bugs 5s 1500ms linear infinite;
 @-webkit-keyframes mushroom{
 	0%{right:-50px;}
 	100%{right:120%;}
+}
+
+
+.clouds{
+	width:5px;
+	height:5px;
+	background:#FFF;
+	box-shadow:5px 0px 0px #FFF,
+			   10px 0px 0px #FFF,
+			   15px 0px 0px #FFF,
+			   20px 0px 0px #FFF,
+			   25px 0px 0px #FFF,
+			   30px 0px 0px #FFF,
+
+			   -5px 5px 0px #FFF,
+			   0px 5px 0px #FFF,
+			   5px 5px 0px #FFF,
+			   10px 5px 0px #FFF,
+			   15px 5px 0px #FFF,
+			   20px 5px 0px #FFF,
+			   25px 5px 0px #FFF,
+			   30px 5px 0px #FFF,
+			   35px 5px 0px #FFF,
+
+			   -5px 10px 0px #FFF,
+			   0px 10px 0px #FFF,
+			   5px 10px 0px #FFF,
+			   10px 10px 0px #FFF,
+			   15px 10px 0px #FFF,
+			   20px 10px 0px #FFF,
+			   25px 10px 0px #FFF,
+			   30px 10px 0px #FFF,
+			   35px 10px 0px #FFF,
+			   40px 10px 0px #FFF,
+
+			   -30px 15px 0px #FFF,
+			   -25px 15px 0px #FFF,
+			   -10px 15px 0px #FFF,
+			   -5px 15px 0px #FFF,
+			   0px 15px 0px #FFF,
+			   5px 15px 0px #FFF,
+			   10px 15px 0px #FFF,
+			   15px 15px 0px #FFF,
+			   20px 15px 0px #FFF,
+			   25px 15px 0px #FFF,
+			   30px 15px 0px #FFF,
+			   35px 15px 0px #FFF,
+			   40px 15px 0px #FFF,
+			   45px 15px 0px #FFF,
+
+			   -35px 20px 0px #FFF,
+			   -30px 20px 0px #FFF,
+			   -25px 20px 0px #FFF,
+			   -20px 20px 0px #FFF,
+			   -15px 20px 0px #FFF,
+			   -10px 20px 0px #FFF,
+			   -5px 20px 0px #FFF,
+			   0px 20px 0px #FFF,
+			   5px 20px 0px #FFF,
+			   10px 20px 0px #FFF,
+			   15px 20px 0px #FFF,
+			   20px 20px 0px #FFF,
+			   25px 20px 0px #FFF,
+			   30px 20px 0px #FFF,
+			   35px 20px 0px #FFF,
+			   40px 20px 0px #FFF,
+			   45px 20px 0px #FFF,
+
+			   -35px 25px 0px #FFF,
+			   -30px 25px 0px #FFF,
+			   -25px 25px 0px #FFF,
+			   -20px 25px 0px #FFF,
+			   -15px 25px 0px #FFF,
+			   -10px 25px 0px #FFF,
+			   -5px 25px 0px #FFF,
+			   0px 25px 0px #FFF,
+			   5px 25px 0px #FFF,
+			   10px 25px 0px #FFF,
+			   15px 25px 0px #FFF,
+			   20px 25px 0px #FFF,
+			   25px 25px 0px #FFF,
+			   30px 25px 0px #FFF,
+			   35px 25px 0px #FFF,
+			   40px 25px 0px #FFF,
+			   45px 25px 0px #FFF,
+			   50px 25px 0px #FFF,
+
+			   -30px 30px 0px #FFF,
+			   -25px 30px 0px #FFF,
+			   -20px 30px 0px #FFF,
+			   -15px 30px 0px #FFF,
+			   -10px 30px 0px #FFF,
+			   -5px 30px 0px #FFF,
+			   0px 30px 0px #FFF,
+			   5px 30px 0px #FFF,
+			   10px 30px 0px #FFF,
+			   15px 30px 0px #FFF,
+			   20px 30px 0px #FFF,
+			   25px 30px 0px #FFF,
+			   30px 30px 0px #FFF,
+			   35px 30px 0px #FFF,
+			   40px 30px 0px #FFF,
+			   45px 30px 0px #FFF,
+
+			   -25px 35px 0px #E0E0E0,
+			   -20px 35px 0px #E0E0E0,
+			   -15px 35px 0px #E0E0E0,
+			   -10px 35px 0px #E0E0E0,
+			   -5px 35px 0px #E0E0E0,
+			   0px 35px 0px #E0E0E0,
+			   5px 35px 0px #E0E0E0,
+			   10px 35px 0px #E0E0E0,
+			   15px 35px 0px #E0E0E0,
+			   20px 35px 0px #E0E0E0,
+			   25px 35px 0px #E0E0E0,
+			   30px 35px 0px #E0E0E0,
+			   35px 35px 0px #E0E0E0,
+			   40px 35px 0px #E0E0E0,
+			   45px 35px 0px #E0E0E0;
+	position:absolute;
+}
+
+#cloud-cluster1{
+	position: absolute;
+	width:1000px;
+	height:100%;
+	left:0px;
+	animation:cloud 20s infinite;
+	-webkit-animation:cloud 20s infinite;
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+#cloud-cluster2{
+	position: absolute;
+	width:1000px;
+	height:100%;
+	left:1001px;
+	animation:cloud 20s infinite;
+	-webkit-animation:cloud 20s infinite;
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+
+@keyframes cloud{
+	from{transform:translateX(0px);}
+	to{transform:translateX(-1000px);}
+}
+@-webkit-keyframes cloud{
+	from{-webkit-transform:translateX(0px);}
+	to{-webkit-transform:translateX(-1000px);}
+}
+
+.cloud-group .c1{
+	left:100px;
+	top:100px;
+}
+.cloud-group .c3{
+	left:140px;
+	top:80px;
+}
+.cloud-group .c4{
+	left:175px;
+	top:100px;
+}
+
+.g1{
+	position:absolute;
+	top:50px;
+	left:50px;
+}
+.g2{
+	position:absolute;
+	top:200px;
+	left:200px;
+}
+
+.g3{
+	position:absolute;
+	top:400px;
+	left:100px;
+}
+.g4{
+	position:absolute;
+	top:50px;
+	left:650px;
+}
+.g5{
+	position:absolute;
+	top:300px;
+	left:700px;
+}
+
+.g6{
+	position:absolute;
+	top:400px;
+	left:500px;
+}
+
+
+/*coin*/
+.coin{
+	width:80px;
+	height:80px;
+	bottom:250px;
+	position:absolute;
+	border:solid yellow 3px;
+	border-radius: 50%;
+	background: rgb(255, 188, 66);
+	box-shadow: 0px 1px 1px orange;
+	text-align: center;
+	font-family: game;
+	color:yellow;
+	font-size: 60px;
+	text-shadow:0px 2px 0px orange;
+	line-height: 80px;
+	transition:transform 500ms;
+	-webkit-transition:transform 500ms;
+	-o-transition:transform 500ms;
+	cursor:pointer;
+}
+
+.coin:hover{
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);
+	-o-transform:scale(1.5);
+}
+
+.shine{
+	width:10px;
+	height:10px;
+	background: yellow;
+	position:absolute;
+	top:5px;
+	left:5px;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	animation:large 1s infinite;
+	-webkit-animation:large 1s infinite;
+	-o-animation:large 1s infinite;
+	animation-direction:alternate;
+	-webkit-animation-direction:alternate;
+	-o-animation-direction:alternate;
+}
+
+.button{
+	border-radius:50%;
+	width:90px;
+	height:90px;
+	margin:5px;
+	font-family: game;
+	color:#FFF;
+	text-align:center;
+	display:inline-block;
+	overflow:hidden;
+}
+
+#button1{
+	background:yellowgreen;
+	font-size:25px;
+	line-height:90px;
+}
+#button2{
+	background:#9875FE;
+	font-size:25px;
+	line-height:90px;
+}
+#button3{
+	background:#FE757F;
+	font-size:25px;
+	line-height:90px;
+}
+
+@keyframes large{
+	from{width:10px;height:10px;}
+	from{width:15px;height:15px;}
+}
+@-webkit-keyframes large{
+	from{width:10px;height:10px;}
+	from{width:15px;height:15px;}
+}
+
+#black-curtain{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.8);
+	z-index: -1;
+	opacity:0;
+}
+
+#message{
+	width:600px;
+	height:400px;
+	margin:auto;
+	top:0px;
+	bottom: 0px;
+	background:#FFF;
+	position:absolute;
+	left:calc(50% - 300px);
+	font-family: arial;
+	color:gray;
+	text-align: center;
+	font-family: game;
+}
+
+#message-close{
+	font-size:50px;
+	position:absolute;
+	top:-20px;
+	left:-20px;
+}
+
+.bold{
+	font-weight: bold;
+	color:#000;
+}
+
+@keyframes fadein{
+	0%{z-index: -1;opacity:0;}
+	10%{z-index: 100;opacity:0;}
+	100%{z-index: 100;opacity:1;}
+}
+@keyframes fadeout1{
+	0%{z-index: 100;opacity:1;}
+	90%{z-index: 100;opacity:0;}
+}	
+
+@-webkit-keyframes fadein{
+	0%{z-index: -1;opacity:0;}
+	10%{z-index: 100;opacity:0;}
+	100%{z-index: 100;opacity:1;}
+}
+@-webkit-keyframes fadeout1{
+	0%{z-index: 100;opacity:1;}
+	90%{z-index: 100;opacity:0;}
+	100%{z-index: -1;opacity:0;}
+}
+
+#me{
+	margin:5px;
+	height:300px;
+}
+
+#coin1{
+	animation:fromrighttoleft 10s forwards;
+	-webkit-animation:fromrighttoleft 10s forwards;
+	-o-animation:fromrighttoleft 10s forwards;
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+	-o-animation-play-state:paused;
+}
+
+@keyframes fromrighttoleft{
+	from{left:1024px;}
+	to{left:-100px}
+}
+@-webkit-keyframes fromrighttoleft{
+	from{left:1024px;}
+	to{left:-100px}
+}
+
+@keyframes fadeinout{
+	0%{opacity:0;}
+	30%{opacity:1;}
+	70%{opacity:1;}
+	100%{opacity:0;}
+}
+
+/*directions*/
+.direction{
+	width:500px;
+	font-size:25px;
+	position:absolute;
+	color:blue;
+	font-family: game;
+	background:#75FF88;
+	padding:5px;
+	border:solid blue 3px;
+	box-shadow:3px 3px 0px rgb(42,42,42);
+	text-align:center;
+	left:calc(50% - 250px);
+	top:20px;
+	opacity:0;
+}
+
+#dir1{
+	animation:fadeinout 3s 2s forwards;
+	-webkit-animation:fadeinout 3s 2s forwards;
+	-o-animation:fadeinout 3s 2s forwards;
+	animation-direction:alternate;
+	-webkit-animation-direction:alternate;
+	-o-animation-direction:alternate;
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+	-o-animation-play-state:paused;
+}
+#dir2{
+	animation:fadeinout 3s 5s forwards;
+	-webkit-animation:fadeinout 3s 5s forwards;
+	-o-animation:fadeinout 3s 5s forwards;
+	animation-direction:alternate;
+	-webkit-animation-direction:alternate;
+	-o-animation-direction:alternate;
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+	-o-animation-play-state:paused;
+}
+
+.smaller{
+	font-size:12px;
 }
