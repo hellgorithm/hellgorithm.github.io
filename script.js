@@ -5,7 +5,8 @@ window.onload = function(){
 		
 		var gamearea = document.getElementById("gamearea"),
 			moby		=	document.getElementById("moby"),
-			star		=	document.getElementById("star");
+			star		=	document.getElementById("star"),
+			titanic		=	document.getElementById("titanic");
 	
 	stop();
 
@@ -83,6 +84,11 @@ window.onload = function(){
 		}else{
 			star.style.position = "absolute";
 			star.style.left = "5000px";
+		}
+		if(this.scrollLeft > 7400){
+			titanic.style.bottom = "-600px";
+		}else{
+			titanic.style.bottom = "-40px";
 		}
 	}
 	

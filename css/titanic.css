@@ -1,0 +1,81 @@
+
+.titanic{
+	position:absolute;
+	left:8200px;
+	bottom:-40px;
+	transition:bottom 10s;
+	-webkit-transition:bottom 10s;
+}
+
+.titanic-bust{
+	width:170px;
+	height:50px;
+	background:#BBBBBB;
+	border-left:solid #984242 10px;
+	transform:skewY(-20deg);
+	-webkit-transform:skewY(-20deg);
+	left:-200px;
+	top:250px;
+	position:absolute;
+}
+.titanic-bust2{
+	width:170px;
+	height:50px;
+	background:#BBBBBB;
+	border-left:solid #984242 10px;
+	transform:skewY(-20deg);-webkit-transform:skewY(-20deg);
+	left:-200px;
+	top:350px;
+	position:absolute;
+}
+.titanic-passenger{
+	width:50px;
+	height:300px;
+	background:#BBBBBB;
+	transform:skewY(-20deg);
+	border-radius:10px;
+	position:absolute;
+	top:180px;
+	left:-60px;
+}
+
+.titanic-body{
+
+	width:100px;
+	height:500px;
+	background:#2D2D2D;
+	transform:skewY(20deg);-webkit-transform:skewY(20deg);
+	border-right:solid #984242 150px;
+	border-left:solid #BBBBBB 20px;
+	border-top-right-radius:80%;
+}
+
+.titanic-engine{
+	width:100px;
+	height:100px;
+	background:#984242;
+	position:absolute;
+	right:-100px;
+	border-radius:20px;
+	top:10px;
+}
+
+.titanic-window{
+	width:10px;
+	height:10px;
+	background:#FFF;
+	box-shadow:0px 0px 5px #FFF;
+	display:inline-block;
+	margin:10px;
+	transform:skewY(-20deg);-webkit-transform:skewY(-20deg);
+}
+
+.titanic-name{
+	transform-origin:100% 100%;-webkit-transform-origin:100% 100%;
+	transform:rotate(-90deg);-webkit-transform:rotate(-90deg);
+	width:100px;
+	position:absolute;
+	top:-30px;
+	left:-100px;
+	font-family: arial;
+}
