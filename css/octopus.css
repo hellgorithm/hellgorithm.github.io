@@ -1,0 +1,177 @@
+.octopus-div{
+	position:absolute;
+	left:6600px;
+	bottom:10px;
+	width:700px;
+	height:340px;
+	overflow:hidden;
+}
+
+.octo-labels{
+	position:absolute;
+	font-family:game;
+	color:#8DD6EF;
+	top:100px;
+	text-align:center;
+	font-size:20px;
+	left:6900px;
+	width:600px;
+}
+
+.octo-labels a{
+	text-decoration:none;
+	color:orange;
+}
+
+.octo-labels a:hover{
+	color:yellow;
+}
+
+.octo-labels a:visited{
+	color:orange;
+}
+
+.octo-labels h1{
+	font-size:25px;
+	color:orange;
+}
+
+.octopus{
+	margin:0px auto;
+	width:300px;
+	height:300px;
+}
+
+.octo-head{
+	width:300px;
+	height:350px;
+	background:#B87F2C;
+	border-radius:50%;
+	position:relative;
+}
+
+.octo-face{
+	width:200px;
+	height:200px;
+	position:relative;
+	top:150px;
+	background:#B87F2C;
+	margin:0px auto;
+}
+
+.octo-effect-left,.octo-effect-right{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background:rgba(17, 74, 116, 1);
+	position:absolute;
+	bottom:0px;
+}
+
+.octo-effect-left{
+	left:-40px;
+}
+.octo-effect-right{
+	right:-40px;
+}
+
+.tentacle1{
+	width:200px;
+	height:200px;
+	box-shadow:-80px 0px 0px #946623;
+	border-radius:50%;
+	position:absolute;
+	bottom:-60px;
+}
+.tentacle2{
+	width:250px;
+	height:250px;
+	box-shadow:-80px 0px 0px #B87F2C;
+	border-radius:50%;
+	position:absolute;
+	bottom:-60px;
+	left:100px;
+}
+.tentacle3{
+	width:200px;
+	height:200px;
+	box-shadow:-80px 0px 0px #C47B10;
+	border-radius:50%;
+	position:absolute;
+	bottom:-70px;
+	left:120px;
+}
+
+.tenta-cle{
+	width:10px;
+	height:10px;
+	position:absolute;
+	left:10px;
+	box-shadow:0px 5px 0px #EDC387,
+				5px 0px 0px #EDC387,
+				-5px 0px 0px #EDC387,
+				0px -5px 0px #EDC387;
+}
+
+.tt1{
+	top:10px;
+	left:15px;
+}
+
+.tt2{
+	top:30px;
+	left:-5px;
+}
+.tt3{
+	top:60px;
+	left:-15px;
+}
+.tt4{
+	top:90px;
+	left:-25px;
+}
+.tt5{
+	top:120px;
+	left:-20px;
+}
+
+.rt1,.rt2,.rt3{
+	transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+}
+
+.rt3{
+	left:420px;
+}
+.rt2{
+	left:350px !important;
+}
+.rt1{
+	left:300px !important;
+}
+
+.octo-eye-left,.octo-eye-right{
+	width:30px;
+	height:30px;
+	background:#FFF;
+	position:absolute;
+	box-shadow:0px 5px 0px rgb(42,42,42),
+				5px 0px 0px rgb(42,42,42),
+				0px -5px 0px rgb(42,42,42),
+				-5px 0px 0px rgb(42,42,42);
+	bottom:20px;
+}
+
+.octo-eye-left{
+	left:50px;
+}
+.octo-eye-right{
+	right:50px;
+}
+
+.octo-iris{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background:rgb(42,42,42);
+}
