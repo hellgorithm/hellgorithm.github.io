@@ -31,6 +31,7 @@ window.onload = function(){
 			gamearea.scrollLeft = gameareaScroll;
 			flappynav.style.left = (gameareaScroll + 100) + "px";
 			flappy.style.animationPlayState = "paused";
+			flappy.style.webkitAnimationPlayState = "paused";
 
 		}else if(e.keyCode == 37){
 			if(gameareaScroll < 10){
@@ -49,6 +50,7 @@ window.onload = function(){
 	
 	window.onkeyup = function(){
 		flappy.style.animationPlayState = "running";
+		flappy.style.webkitAnimationPlayState = "running";
 	}
 	
 
