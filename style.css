@@ -11,7 +11,7 @@
 }
 
 body{
-	background:rgba(17, 74, 116, 1);
+	background:rgb(8, 75, 148);
 }
 
 #surround{
@@ -275,12 +275,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', end
 	border:#051D77 solid 5px;
 	position:absolute;
 	font-family:game;
-	font-size:40px;
+	font-size:50px;
 	color:rgb(42,42,42);
 	padding:10px;
 	top:70px;
 	left:0px;
 	width:auto;
+	white-space: nowrap;
 
 }
 
