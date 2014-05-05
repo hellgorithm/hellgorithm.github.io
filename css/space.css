@@ -1,0 +1,561 @@
+.space{
+	position:absolute;
+	top:0px;
+	left:8500px;
+	height:720px;
+}
+.moon{
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	box-shadow:100px 20px 0px #FBFFCC;
+	position:absolute;
+	top:100px;
+	left:-1000px;
+}
+
+.dimmer{
+	opacity:0.7;
+}
+
+.circles{
+	box-shadow:0px 5px 0px #FFD17A,
+				0px -5px 0px #FFD17A,
+				5px 0px 0px #FFD17A,
+				-5px 0px 0px #FFD17A;
+	position:absolute;
+}
+
+.circle1{
+	width:10px;
+	height:10px;
+	right:0px;
+	top:50px;
+}
+
+
+.jupiter{
+	width:400px;
+	height:400px;
+	border-radius:50%;
+	background:#EAE6C5;
+	position:absolute;
+	bottom:-100px;
+	left:300px;
+	overflow:hidden;
+	box-shadow:inset -10px -5px 15px gray;
+	transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+}
+
+.great-red-spot{
+	width:120px;
+	height:100px;
+	background:transparent;
+	border-radius:50%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	box-shadow:100px 100px 30px #FF5252,
+	200px 220px 30px #FF5252;
+}
+
+.jupiter-line-one{
+	width:10px;
+	height:20px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	top:150px;
+	left:-10px;
+	
+}
+.jupiter-line-two{
+	width:10px;
+	height:50px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	top:50px;
+	left:10px;
+	
+}
+.jupiter-line-three{
+	width:10px;
+	height:50px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	bottom:50px;
+	left:10px;
+	
+}
+.jupiter-line-four{
+	width:10px;
+	height:50px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	bottom:0px;
+	left:10px;
+	
+}
+.jupiter-line-five{
+	width:10px;
+	height:5px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	top:0px;
+	left:10px;
+	
+}
+.jupiter-line-six{
+	width:10px;
+	height:5px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	top:100px;
+	left:10px;
+	
+}
+.jupiter-line-seven{
+	width:10px;
+	height:30px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	top:200px;
+	left:-10px;
+	
+}
+.jupiter-line-eigth{
+	width:10px;
+	height:50px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	top:250px;
+	left:-10px;
+	
+}
+.jupiter-line-nine{
+	width:10px;
+	height:50px;
+	border-radius:50%;
+	background:#FF5252;
+	position:absolute;
+	top:100px;
+	left:-10px;
+	
+}
+
+.jlines{box-shadow:8px 0px 15px #FF5252,
+				16px 0px 15px #FF5252,
+				24px 0px 15px #FF5252,
+				32px 0px 15px #FF5252,
+				40px 0px 20px #FF5252,
+				48px 0px 15px #FF5252,
+				56px 0px 15px #FF5252,
+				64px 0px 15px #FF5252,
+				72px 0px 15px #FF5252,
+				80px 0px 15px #FF5252,
+				88px 0px 15px #FF5252,
+				96px 0px 15px #FF5252,
+				104px 0px 15px #FF5252,
+				112px 0px 15px #FF5252,
+				120px 0px 15px #FF5252,
+				128px 0px 15px #FF5252,
+				136px 0px 20px #FF5252,
+				144px 0px 15px #FF5252,
+				152px 0px 15px #FF5252,
+				160px 0px 15px #FF5252,
+				168px 0px 15px #FF5252,
+				176px 0px 15px #FF5252,
+				184px 0px 15px #FF5252,
+				192px 0px 15px #FF5252,
+				200px 0px 15px #FF5252,
+				208px 0px 15px #FF5252,
+				216px 0px 15px #FF5252,
+				224px 0px 15px #FF5252,
+				232px 0px 15px #FF5252,
+				240px 0px 15px #FF5252,
+				248px 0px 15px #FF5252,
+				256px 0px 15px #FF5252,
+				264px 0px 15px #FF5252,
+				272px 0px 15px #FF5252,
+				280px 0px 15px #FF5252,
+				288px 0px 15px #FF5252,
+				296px 0px 15px #FF5252,
+				304px 0px 15px #FF5252,
+				312px 0px 15px #FF5252,
+				320px 0px 15px #FF5252,
+				328px 0px 15px #FF5252,
+				336px 0px 15px #FF5252,
+				342px 0px 15px #FF5252,
+				350px 0px 15px #FF5252,
+				358px 0px 15px #FF5252,
+				366px 0px 15px #FF5252,
+				374px 0px 15px #FF5252,
+				382px 0px 15px #FF5252,
+				390px 0px 15px #FF5252,
+				398px 0px 15px #FF5252,
+				406px 0px 15px #FF5252,
+				414px 0px 15px #FF5252,
+				422px 0px 15px #FF5252;}
+
+.jlines2{box-shadow:8px 0px 15px #FFA952,
+				16px 0px 15px #FFA952,
+				24px 0px 15px #FFA952,
+				32px 0px 15px #FFA952,
+				40px 0px 20px #FFA952,
+				48px 0px 15px #FFA952,
+				56px 0px 15px #FFA952,
+				64px 0px 15px #FFA952,
+				72px 0px 15px #FFA952,
+				80px 0px 15px #FFA952,
+				88px 0px 15px #FFA952,
+				96px 0px 15px #FFA952,
+				104px 0px 15px #FFA952,
+				112px 0px 15px #FFA952,
+				120px 0px 15px #FFA952,
+				128px 0px 15px #FFA952,
+				136px 0px 20px #FFA952,
+				144px 0px 15px #FFA952,
+				152px 0px 15px #FFA952,
+				160px 0px 15px #FFA952,
+				168px 0px 15px #FFA952,
+				176px 0px 15px #FFA952,
+				184px 0px 15px #FFA952,
+				192px 0px 15px #FFA952,
+				200px 0px 15px #FFA952,
+				208px 0px 15px #FFA952,
+				216px 0px 15px #FFA952,
+				224px 0px 15px #FFA952,
+				232px 0px 15px #FFA952,
+				240px 0px 15px #FFA952,
+				248px 0px 15px #FFA952,
+				256px 0px 15px #FFA952,
+				264px 0px 15px #FFA952,
+				272px 0px 15px #FFA952,
+				280px 0px 15px #FFA952,
+				288px 0px 15px #FFA952,
+				296px 0px 15px #FFA952,
+				304px 0px 15px #FFA952,
+				312px 0px 15px #FFA952,
+				320px 0px 15px #FFA952,
+				328px 0px 15px #FFA952,
+				336px 0px 15px #FFA952,
+				342px 0px 15px #FFA952,
+				350px 0px 15px #FFA952,
+				358px 0px 15px #FFA952,
+				366px 0px 15px #FFA952,
+				374px 0px 15px #FFA952,
+				382px 0px 15px #FFA952,
+				390px 0px 15px #FFA952,
+				398px 0px 15px #FFA952,
+				406px 0px 15px #FFA952,
+				414px 0px 15px #FFA952,
+				422px 0px 15px #FFA952;}
+.jlines3{box-shadow:8px 0px 15px #FF5285,
+				16px 0px 15px #FF5285,
+				24px 0px 15px #FF5285,
+				32px 0px 15px #FF5285,
+				40px 0px 20px #FF5285,
+				48px 0px 15px #FF5285,
+				56px 0px 15px #FF5285,
+				64px 0px 15px #FF5285,
+				72px 0px 15px #FF5285,
+				80px 0px 15px #FF5285,
+				88px 0px 15px #FF5285,
+				96px 0px 15px #FF5285,
+				104px 0px 15px #FF5285,
+				112px 0px 15px #FF5285,
+				120px 0px 15px #FF5285,
+				128px 0px 15px #FF5285,
+				136px 0px 20px #FF5285,
+				144px 0px 15px #FF5285,
+				152px 0px 15px #FF5285,
+				160px 0px 15px #FF5285,
+				168px 0px 15px #FF5285,
+				176px 0px 15px #FF5285,
+				184px 0px 15px #FF5285,
+				192px 0px 15px #FF5285,
+				200px 0px 15px #FF5285,
+				208px 0px 15px #FF5285,
+				216px 0px 15px #FF5285,
+				224px 0px 15px #FF5285,
+				232px 0px 15px #FF5285,
+				240px 0px 15px #FF5285,
+				248px 0px 15px #FF5285,
+				256px 0px 15px #FF5285,
+				264px 0px 15px #FF5285,
+				272px 0px 15px #FF5285,
+				280px 0px 15px #FF5285,
+				288px 0px 15px #FF5285,
+				296px 0px 15px #FF5285,
+				304px 0px 15px #FF5285,
+				312px 0px 15px #FF5285,
+				320px 0px 15px #FF5285,
+				328px 0px 15px #FF5285,
+				336px 0px 15px #FF5285,
+				342px 0px 15px #FF5285,
+				350px 0px 15px #FF5285,
+				358px 0px 15px #FF5285,
+				366px 0px 15px #FF5285,
+				374px 0px 15px #FF5285,
+				382px 0px 15px #FF5285,
+				390px 0px 15px #FF5285,
+				398px 0px 15px #FF5285,
+				406px 0px 15px #FF5285,
+				414px 0px 15px #FF5285,
+				422px 0px 15px #FF5285;}
+			
+.planet{
+position:absolute;
+	width:200px;
+	height:200px;
+	background:#B9B9B9;
+	border-radius:50%;
+	overflow:hidden;
+	box-shadow:inset -10px -5px 15px gray;
+	top:0px;
+}
+
+.planet-crater{
+	width:40px;
+	height:40px;
+	box-shadow:0px 0px 20px #747474;
+	border-radius:50%;
+	position:absolute;
+	top:20px;
+	left:40px;
+}
+
+.planet-crater2{
+	width:50px;
+	height:50px;
+	box-shadow:0px 0px 20px #747474;
+	border-radius:50%;
+	position:absolute;
+	top:80px;
+	left:70px;
+}
+.planet-crater3{
+	width:20px;
+	height:20px;
+	box-shadow:0px 0px 20px #747474;
+	border-radius:50%;
+	position:absolute;
+	right:60px;
+	bottom:20px;
+}
+.planet-crater4{
+	width:30px;
+	height:30px;
+	box-shadow:0px 0px 20px #747474;
+	border-radius:50%;
+	position:absolute;
+	right:100px;
+	bottom:30px;
+}
+.planet-crater5{
+	width:40px;
+	height:40px;
+	box-shadow:0px 0px 20px #747474;
+	border-radius:50%;
+	position:absolute;
+	right:30px;
+	top:30px;
+}
+.planet-crater6{
+	width:60px;
+	height:60px;
+	box-shadow:0px 0px 20px #747474;
+	border-radius:50%;
+	position:absolute;
+	left:-30px;
+	bottom:70px;
+}
+
+.mars{
+	width:100px;
+	height:100px;
+	background:#C13E65;
+	border-radius:50%;
+	position:absolute;
+	top:100px;
+	left:750px;
+	box-shadow:inset -10px -5px 15px #000;
+}
+
+
+.saturn{
+	position:absolute;
+	top:0px;
+	left:850px;
+	transform:rotate(20deg);
+	-webkit-transform:rotate(20deg);
+}
+
+.saturn-ring{
+	width:300px;
+	height:300px;
+	border:solid #FFF 100px;
+	border-radius:50%;
+	transform:rotateX(80deg);
+	-webkit-transform:rotateX(80deg);
+	opacity:0.6;
+	position:absolute;
+	z-index:0;
+}
+
+.saturn-planet{
+	width:200px;
+	height:200px;
+	background:#D1F2FF;
+	border-radius:50%;
+	position:absolute;
+	top:150px;
+	left:150px;
+	z-index:0;
+	box-shadow:inset -10px -5px 15px gray;
+	overflow:hidden;
+}
+
+.saturn-line-one{
+	position:absolute;
+	top:10px;
+	left:0px;
+	height:20px;
+	width:5px;
+}
+.saturn-line-two{
+	position:absolute;
+	top:50px;
+	left:0px;
+	height:30px;
+	width:5px;
+}
+.saturn-line-three{
+	position:absolute;
+	top:90px;
+	left:0px;
+	height:50px;
+	width:5px;
+}
+.saturn-line-four{
+	position:absolute;
+	bottom:10px;
+	left:0px;
+	height:20px;
+	width:5px;
+}
+
+.jlines4{box-shadow:8px 0px 15px #B7E2F9,
+				16px 0px 15px #B7E2F9,
+				24px 0px 15px #B7E2F9,
+				32px 0px 15px #B7E2F9,
+				40px 0px 20px #B7E2F9,
+				48px 0px 15px #B7E2F9,
+				56px 0px 15px #B7E2F9,
+				64px 0px 15px #B7E2F9,
+				72px 0px 15px #B7E2F9,
+				80px 0px 15px #B7E2F9,
+				88px 0px 15px #B7E2F9,
+				96px 0px 15px #B7E2F9,
+				104px 0px 15px #B7E2F9,
+				112px 0px 15px #B7E2F9,
+				120px 0px 15px #B7E2F9,
+				128px 0px 15px #B7E2F9,
+				136px 0px 20px #B7E2F9,
+				144px 0px 15px #B7E2F9,
+				152px 0px 15px #B7E2F9,
+				160px 0px 15px #B7E2F9,
+				168px 0px 15px #B7E2F9,
+				176px 0px 15px #B7E2F9,
+				184px 0px 15px #B7E2F9,
+				192px 0px 15px #B7E2F9,
+				200px 0px 15px #B7E2F9,
+				208px 0px 15px #B7E2F9,
+				216px 0px 15px #B7E2F9,
+				224px 0px 15px #B7E2F9,
+				232px 0px 15px #B7E2F9,
+				240px 0px 15px #B7E2F9,
+				248px 0px 15px #B7E2F9,
+				256px 0px 15px #B7E2F9,
+				264px 0px 15px #B7E2F9,
+				272px 0px 15px #B7E2F9,
+				280px 0px 15px #B7E2F9,
+				288px 0px 15px #B7E2F9,
+				296px 0px 15px #B7E2F9,
+				304px 0px 15px #B7E2F9,
+				312px 0px 15px #B7E2F9,
+				320px 0px 15px #B7E2F9,
+				328px 0px 15px #B7E2F9,
+				336px 0px 15px #B7E2F9,
+				342px 0px 15px #B7E2F9,
+				350px 0px 15px #B7E2F9,
+				358px 0px 15px #B7E2F9,
+				366px 0px 15px #B7E2F9,
+				374px 0px 15px #B7E2F9,
+				382px 0px 15px #B7E2F9,
+				390px 0px 15px #B7E2F9,
+				398px 0px 15px #B7E2F9,
+				406px 0px 15px #B7E2F9,
+				414px 0px 15px #B7E2F9,
+				422px 0px 15px #B7E2F9;}
+.jlines5{box-shadow:8px 0px 15px #8DD8FF,
+				16px 0px 15px #8DD8FF,
+				24px 0px 15px #8DD8FF,
+				32px 0px 15px #8DD8FF,
+				40px 0px 20px #8DD8FF,
+				48px 0px 15px #8DD8FF,
+				56px 0px 15px #8DD8FF,
+				64px 0px 15px #8DD8FF,
+				72px 0px 15px #8DD8FF,
+				80px 0px 15px #8DD8FF,
+				88px 0px 15px #8DD8FF,
+				96px 0px 15px #8DD8FF,
+				104px 0px 15px #8DD8FF,
+				112px 0px 15px #8DD8FF,
+				120px 0px 15px #8DD8FF,
+				128px 0px 15px #8DD8FF,
+				136px 0px 20px #8DD8FF,
+				144px 0px 15px #8DD8FF,
+				152px 0px 15px #8DD8FF,
+				160px 0px 15px #8DD8FF,
+				168px 0px 15px #8DD8FF,
+				176px 0px 15px #8DD8FF,
+				184px 0px 15px #8DD8FF,
+				192px 0px 15px #8DD8FF,
+				200px 0px 15px #8DD8FF,
+				208px 0px 15px #8DD8FF,
+				216px 0px 15px #8DD8FF,
+				224px 0px 15px #8DD8FF,
+				232px 0px 15px #8DD8FF,
+				240px 0px 15px #8DD8FF,
+				248px 0px 15px #8DD8FF,
+				256px 0px 15px #8DD8FF,
+				264px 0px 15px #8DD8FF,
+				272px 0px 15px #8DD8FF,
+				280px 0px 15px #8DD8FF,
+				288px 0px 15px #8DD8FF,
+				296px 0px 15px #8DD8FF,
+				304px 0px 15px #8DD8FF,
+				312px 0px 15px #8DD8FF,
+				320px 0px 15px #8DD8FF,
+				328px 0px 15px #8DD8FF,
+				336px 0px 15px #8DD8FF,
+				342px 0px 15px #8DD8FF,
+				350px 0px 15px #8DD8FF,
+				358px 0px 15px #8DD8FF,
+				366px 0px 15px #8DD8FF,
+				374px 0px 15px #8DD8FF,
+				382px 0px 15px #8DD8FF,
+				390px 0px 15px #8DD8FF,
+				398px 0px 15px #8DD8FF,
+				406px 0px 15px #8DD8FF,
+				414px 0px 15px #8DD8FF,
+				422px 0px 15px #8DD8FF;}

@@ -9,6 +9,10 @@
 		<link type="text/css" rel="stylesheet" href="./css/stars.css">
 		<link type="text/css" rel="stylesheet" href="./css/penguins.css">
 		<link type="text/css" rel="stylesheet" href="./css/titanic.css">
+		<link type="text/css" rel="stylesheet" href="./css/space.css">
+		<link type="text/css" rel="stylesheet" href="./css/alien.css">
+		<link type="text/css" rel="stylesheet" href="./css/spider.css">
+		<link type="text/css" rel="stylesheet" href="./css/plants.css">
 	</head>
 	<body>
 		<div id='gamearea'>
@@ -215,12 +219,106 @@
 			</div>
 			<!--clouds-->
 			
+			<!--alien-->
+				<div class='alien' id='alien'>
+						<div class='top-alien'></div>
+						<div class='base-alien'></div>
+						<div class='alien-body'><div class='alien-eye' id='alien-eye'></div><div class='reflector'></div></div>
+						
+					<div class='alien-hands ah1'>
+						<div class='my-alien-hands'>
+							<div class='hand-cutter1'></div>
+							<div class='hand-cutter2'></div>
+						</div>
+					</div>
+					<div class='alien-hands2 ah2'>
+						<div class='my-alien-hands2'>
+							<div class='hand-cutter1'></div>
+							<div class='hand-cutter2'></div>
+						</div></div>
+				</div>
+			<!--end alien-->
+			
+			<!--space-->
+			<div class='space'>
+			<div class='moon'>
+			</div>
+			
+			<div class='planet'>
+				<div class='planet-crater'>
+				</div>
+				<div class='planet-crater2'>
+				</div>
+				<div class='planet-crater3'>
+				</div>
+				<div class='planet-crater4'>
+				</div>
+				<div class='planet-crater5'>
+				</div>
+				<div class='planet-crater6'>
+				</div>
+			</div>
+			
+			<div class='jupiter'>
+				<div class='jupiter-line-one jlines'></div>
+				<div class='jupiter-line-two jlines'></div>
+				<div class='jupiter-line-three jlines'></div>
+				<div class='jupiter-line-four jlines2'></div>
+				<div class='jupiter-line-five jlines2'></div>
+				<div class='jupiter-line-six jlines2'></div>
+				<div class='jupiter-line-seven jlines2'></div>
+				<div class='jupiter-line-eigth jlines3'></div>
+				<div class='jupiter-line-nine jlines3'></div>
+				<div class='great-red-spot'></div>
+			</div>
+			
+			<div class='mars'>
+			
+			</div>
+			
+			<div class='saturn'>
+				<div class='saturn-ring'></div>
+				<div class='saturn-planet'>
+				<div class='saturn-line-one jlines4'></div>
+				<div class='saturn-line-two jlines4'></div>
+				<div class='saturn-line-three jlines4'></div>
+				<div class='saturn-line-four jlines5'></div>
+				</div>
+			</div>
+		</div>
+			<!--end space-->
+			<!--labels-->
 						<div class='octo-labels'>
 						<h1>College</h1>
-						Best Web Developer Batch 2012-2013<br><br>
+						<span style='color:#0099CC;'>Best Web Developer Batch 2012-2013</span></a><br><br>
 						Best Thesis : SBC Online Enrollment System<br>(implemented last April 2014)<br>
 						link : <a target='_blank' href='http://sbcors.sbc-elearning.com'>SBC ORS Online Enrollment System</a><br><br>
 						1ST Place : PSITE VB.net Competition<br>(2012)
+						</div>
+						
+						<div id='label2'>
+							<h1>Spare Time</h1>
+							<h3>Winner February's App Of The Month Contest for Firefox OS by Mozilla</h3>
+							<p>February 2014</p>
+							<a target='_blank' href='https://dl.dropboxusercontent.com/u/15594195/flames/index.html'>Live App : FoxyFlames</a>
+						</div>
+						<div id='label5'>
+							<h1>Check out my Other Project</h1>
+							<h3><a target='_blank' href='http://github.com/bonakid/inertia.js'>Inertia.js :: Web-based Presentation</a></h3><br>
+						</div>
+						<div id='label4'>
+							<h1>Follow Me @</h1>
+							<h3><a href='https://github.com/bonakid'>Github.com/Bonakid</a></h3><br>
+							<h3><a href='https://www.facebook.com/deaththeplague'>facebook.com/deaththeplague</a></h3><br>
+							</div>
+						<div id='label3'>
+							<h1>Being A Tech-Evangelist</h1>
+							<h3>Speaker : Advance Web Development (using HTML5)</h3>
+							<p>August 23, 2013</p><br>
+							<h3>Speaker : Sibul Mini Press Conference (Adobe Photoshop &amp; Adobe InDesign)</h3>
+							<p>August 21, 2013</p><br>
+							<h3>Speaker : Technology On Social Work</h3>
+							<p>January 2014</p><br>
 						</div>
 			<!--titanic-->
 			<div class='titanic' id='titanic'>
@@ -408,7 +506,7 @@
 			<!--end bug-->
 			
 			<!--boat-->
-			<div class='boat boat1'>
+			<div class='boat boat1' id='boat1'>
 				<div class='sail sail101'><span class='skillko skill1'>Node.js</span></div>
 				<div class='sail2 sail101'></div>
 				<div class='boat-pole bs'><div class='top'></div></div>
@@ -423,7 +521,7 @@
 				<div class='bt7 bor green'></div>
 				<div class='bt8 bor green'></div>
 			</div>
-			<div class='boat boat2'>
+			<div class='boat boat2' id='boat2'>
 				<div class='sail sail102'><span class='skillko skill2'>JQuery<br>JQuery UI</span></div>
 				<div class='sail2 sail102'></div>
 				<div class='boat-pole bs'><div class='top'></div></div>
@@ -540,7 +638,7 @@
 				Other Skills
 			</div>
 			<div class='direction' id='dir3'>
-				Web Developer
+				Programming Skills
 			</div>
 			<div class='developer-message'>
 				Front-end/GUI ~#<br>
@@ -771,16 +869,19 @@
 					</div>
 				</div>
 			<!--end spider-->
-			<div id='flappy'>
+			
+			<div id='nav-flappy'><div id='flappy'>
 				
-			</div>
+			</div></div>
+
 				<div id='mushroom' class='mushes1'></div>
 			
 				<div id='mushroom2' class='mushes2'><div id='mushcover'></div></div>
 			
 			<div id='name'>
 				<span class='main-title'>My Online<br/>Portfolio</span>
-				Press space key to animate...
+				Press right arrow key to start...<br><br>
+				Hit the coin first!
 			</div>
 
 			<!--
@@ -789,7 +890,7 @@
 			-->
 		</div>
 	
-	<div id='surround'>
+	<!--<div id='surround'>
 		<div class='button' id='button1'>
 		Me
 		</div>
@@ -799,7 +900,7 @@
 		<div class='button' id='button3'>
 		Fox
 		</div>
-	</div>
+	</div>-->
 
 	<div id='black-curtain'>
 		<div id='message'>

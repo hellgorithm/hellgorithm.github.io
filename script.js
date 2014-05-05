@@ -1,30 +1,56 @@
+var gameareaScroll = 0;
+
 window.onload = function(){
 		flappy = document.getElementById("flappy"),
+		flappynav = document.getElementById("nav-flappy"),
 		mushroom1 = document.getElementById("mushroom"),
-		mushroom2 = document.getElementById("mushroom2");
+		mushroom2 = document.getElementById("mushroom2"),
+		mess = document.getElementById("message-holder"),
+		curtain = document.getElementById("black-curtain"),
+		close = document.getElementById("message-close"),
 		
-		var gamearea = document.getElementById("gamearea"),
+		//spiders
+		hand2 = document.getElementsByClassName("hand2"),
+		hand3 = document.getElementsByClassName("hand3"),
+		mouth1 = document.getElementsByClassName("mouth1"),
+		mouth2 = document.getElementsByClassName("mouth2"),
+		bug = document.getElementsByClassName("pl-bug"),
+		gamearea = document.getElementById("gamearea"),
 			moby		=	document.getElementById("moby"),
 			star		=	document.getElementById("star"),
-			titanic		=	document.getElementById("titanic");
+			titanic		=	document.getElementById("titanic"),
+			boat1		=	document.getElementById("boat1"),
+			boat2		=	document.getElementById("boat2"),
+			alieneye		=	document.getElementById("alien-eye");
 	
 	stop();
 
 	window.onkeydown = function(e){
-		if(e.keyCode == 32){
-			go();
-			direction("normal");
-		}else if(e.keyCode == 66){
-			go();
-			direction("reverse");
-			
-			bar.style.animation = "rbars 10s forwards";
+		if(e.keyCode == 39){
+			gameareaScroll += 50;
+			gamearea.scrollLeft = gameareaScroll;
+			flappynav.style.left = (gameareaScroll + 100) + "px";
+			flappy.style.animationPlayState = "paused";
+
+		}else if(e.keyCode == 37){
+			if(gameareaScroll < 10){
+				gameareaScroll = 50;
+			}else{
+
+			gameareaScroll -= 50;
+			gamearea.scrollLeft = gameareaScroll;
+			flappynav.style.left = (gameareaScroll + 100) + "px";
+
+			}
 		}
+
+		//go();
 	}
 	
-	this.onkeyup = function(e){
-		stop();	
+	window.onkeyup = function(){
+		flappy.style.animationPlayState = "running";
 	}
+	
 
 	function go(){
 			flappy.className = "flapping";
@@ -80,7 +106,8 @@ window.onload = function(){
 		}
 		if(this.scrollLeft > 5000){
 			star.style.position = "fixed";
-			star.style.left = window.getComputedStyle(gamearea).left;
+			star.style.left = window.getComputedStyle(gamearea).left != "0px" ? window.getComputedStyle(gamearea).left : gamearea.offsetLeft + "px";
+			
 		}else{
 			star.style.position = "absolute";
 			star.style.left = "5000px";
@@ -90,6 +117,95 @@ window.onload = function(){
 		}else{
 			titanic.style.bottom = "-40px";
 		}
+		//
+		if(this.scrollLeft > 800){
+			mushroom.style.animationPlayState = "paused";
+			mushroom.style.webkitAnimationPlayState = "paused";
+		}else{
+			mushroom.style.animationPlayState = "running";
+			mushroom.style.webkitAnimationPlayState = "running";
+		}
+		if(this.scrollLeft > 200 && this.scrollLeft < 1300){
+			mushroom2.style.animationPlayState = "running";
+			mushroom2.style.webkitAnimationPlayState = "running";
+		}else{
+			mushroom2.style.animationPlayState = "paused";
+			mushroom2.style.webkitAnimationPlayState = "paused";
+		}
+		
+		if(this.scrollLeft > 1000 && this.scrollLeft < 1700){
+			
+			for(var i = 0;i < hand2.length;i++){
+				
+				hand2[i].style.animationPlayState = "running";
+				hand3[i].style.animationPlayState = "running";
+				hand2[i].style.webkitAnimationPlayState = "running";
+				hand3[i].style.webkitAnimationPlayState = "running";
+			}
+		}else{
+			for(var i = 0;i < hand2.length;i++){
+				
+				hand2[i].style.animationPlayState = "paused";
+				hand3[i].style.animationPlayState = "paused";
+				hand2[i].style.webkitAnimationPlayState = "paused";
+				hand3[i].style.webkitAnimationPlayState = "paused";
+			}
+		}
+		
+		if(this.scrollLeft > 2000 && this.scrollLeft <  3400){
+			
+			for(var i =0;i <= 2;i++){
+				mouth1[i].style.animationPlayState = "running";
+				mouth2[i].style.animationPlayState = "running";
+				mouth1[i].style.webkitAnimationPlayState = "running";
+				mouth2[i].style.webkitAnimationPlayState = "running";
+			}
+		}else{
+			for(var i =0;i <= 2;i++){
+				mouth1[i].style.animationPlayState = "paused";
+				mouth2[i].style.animationPlayState = "paused";
+				mouth1[i].style.webkitAnimationPlayState = "paused";
+				mouth2[i].style.webkitAnimationPlayState = "paused";
+			}
+			
+		}
+		if(this.scrollLeft > 3400 && this.scrollLeft <  4200){
+			
+				boat1.style.animationPlayState = "running";
+				boat2.style.animationPlayState = "running";
+				boat1.style.webkitAnimationPlayState = "running";
+				boat2.style.webkitAnimationPlayState = "running";
+		}else{
+				boat1.style.animationPlayState = "paused";
+				boat2.style.animationPlayState = "paused";
+				boat1.style.webkitAnimationPlayState = "paused";
+				boat2.style.webkitAnimationPlayState = "paused";
+		}
+		if(this.scrollLeft > 4100 && this.scrollLeft <  5600){
+			
+			for(var i = 0;i < bug.length;i++){
+				bug[i].style.animationPlayState = "running";
+				bug[i].style.webkitAnimationPlayState = "running";
+			}
+		}else{
+			for(var i = 0;i < bug.length;i++){
+				bug[i].style.animationPlayState = "paused";
+				bug[i].style.webkitAnimationPlayState = "paused";
+			}
+		}
+		
+		if(this.scrollLeft > 9600){
+			
+			alieneye.style.animationPlayState = "running";
+			alieneye.style.webkitAnimationPlayState = "running";
+		}else{
+			
+			alieneye.style.animationPlayState = "paused";
+			alieneye.style.webkitAnimationPlayState = "paused";
+		}
+		
+		
+		
 	}
 	
 }
