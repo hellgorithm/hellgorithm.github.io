@@ -268,14 +268,14 @@ position:absolute;
 
 .developer-message{
 	position:absolute;
-	font-family: game;
+	font-family: ubuntufont;
 	color:#FFF;
 	left:1100px;
 	background:#420D44;
 	padding:10px;
 	box-shadow:3px 3px 0px yellow;
 	width:350px;
-	top:200px;
+	top:100px;
 }
 
 @keyframes glide{

@@ -74,7 +74,7 @@ window.onload = function(){
 	}
 
 	coin1.onclick = function(){
-		mess.innerHTML = "<br>root@bonakid:~# whoami<br><img id='me' src='img/me.png'><br><span class='bold'>Jim-Bert Amante</span><br>Bachelor of Science in Information Technology"
+		mess.innerHTML = "<br>root@bonakid:~# whoami<br><img id='me' src='img/me.png'><br><span class='bold'>Jim-Bert Amante</span><br><br>Bachelor of Science in Information Technology<br><br>Analyst/Developer @ FurtherEdge Corp."
 		curtain.style.animation = "fadein 1s forwards";
 		curtain.style.webkitAnimation = "fadein 1s forwards";
 	}

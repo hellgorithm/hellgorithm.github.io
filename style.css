@@ -10,8 +10,14 @@
 	src: url('./fonts/space.ttf');
 }
 
+@font-face
+{
+	font-family: ubuntufont;
+	src: url('./fonts/ubuntu.ttf');
+}
+
 body{
-	background:rgb(8, 75, 148);
+	background:#424242;
 }
 
 #surround{
@@ -585,8 +591,8 @@ animation:bugs 5s 1500ms linear infinite;
 }
 
 #message{
-	width:600px;
-	height:400px;
+	width:620px;
+	height:500px;
 	margin:auto;
 	top:0px;
 	bottom: 0px;
@@ -692,7 +698,7 @@ animation:bugs 5s 1500ms linear infinite;
 	-o-animation-play-state:paused;
 }
 #dir3{
-	left:1300px;
+	left:2800px;
 }
 #dir4{
 	left:3800px;
@@ -878,6 +884,21 @@ animation:bugs 5s 1500ms linear infinite;
 	left:4450px;
 	bottom:10px;
 }
+.boat3{
+	left:3800px;
+	bottom:10px;
+	transform-origin:50% 100%;
+	transform:scale(0.7);
+	-webkit-transform:scale(0.7);
+
+}
+.boat4{
+	left:3600px;
+	bottom:10px;
+	transform-origin:50% 100%;
+	transform:scale(0.5);
+	-webkit-transform:scale(0.5);
+}
 
 .boat .black{
 	width:5px;
@@ -930,6 +951,9 @@ animation:bugs 5s 1500ms linear infinite;
 .boat .sail102{
 	border-bottom-color:#A020F0;
 }
+.boat .sail103{
+	border-bottom-color:#F02020;
+}
 .boat .sail2{
 	position:absolute;
 	width:0px;
@@ -957,6 +981,10 @@ animation:bugs 5s 1500ms linear infinite;
 }
 .boat .yellow{
 	background:#FF6400 !important;
+}
+
+.boat .gray{
+	background:gray !important;
 }
 
 .boat .bt1{
@@ -1094,7 +1122,7 @@ animation:bugs 5s 1500ms linear infinite;
 	position:absolute;
 	font-family:game;
 	color:#8DD6EF;
-	top:100px;
+	top:50px;
 	text-align:center;
 	font-size:30px;
 	left:7800px;
