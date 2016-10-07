@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<link rel="stylesheet" href='./style/style.css'/>
+		<style>
+			@font-face {
+					font-family: happyfont;
+					src: url('./style/defaultfont.ttf');
+			}
+		</style>
+		<title>Foxy Flames : Your friendly love meter :-)</title>
+	</head>
+	
+	<body>
+		<div id='flames-form'>
+			<img src='img/title.png'>
+			<input type='text' id='name1' value='Your Name'/>
+			<input type='text' id='name2' value='His/Her Name'/>
+			<button id='compute'>Compute!</button><button id='reset'>Reset</button>
+		</div>
+		<div id='result'>?</div>
+		<script>
+			
+			var flamed = new Array("Sweetheart","Friends","Love","Accept","Married","Enemy","Sweetheart");
+			var compute = document.getElementById("compute");
+			var reset = document.getElementById("reset");
+			var name1 = document.getElementById("name1");
+			var name2 = document.getElementById("name2");
+			var result = document.getElementById("result");
+			
+			name1.onblur = function(){
+				if(this.value.trim() == ""){
+					this.value = "Your Name";
+					this.style.color = "gray";
+				}
+			}
+			
+			name1.onfocus = function(){
+				if(this.value.trim() == "Your Name"){
+					this.value = "";
+					this.style.color = "#000";
+				}
+			}
+			name2.onfocus = function(){
+				if(this.value.trim() == "His/Her Name"){
+					this.value = "";
+					this.style.color = "#000";
+				}
+			}
+			name2.onblur = function(){
+				if(this.value.trim() == ""){
+					this.value = "His/Her Name";
+					this.style.color = "gray";
+				}
+			}
+			
+			compute.onclick = function(){
+				if(name1.value.trim() == "Your Name" || name2.value.trim() == "His/Her Name"){
+					result.innerHTML = "Anonymous";
+				}else{
+					var f = flames(name1.value,name2.value);
+					result.innerHTML = flamed[f];
+				}
+			}
+			
+			reset.onclick = function(){
+				name1.value = "Your Name";
+				name2.value = "His/Her Name";
+				name1.style.color = "gray";
+				name2.style.color = "gray";
+				result.innerHTML = "?";
+			}
+			var flames = function(name1,name2){
+				var nameOne = name1.replace(/[\s\-\.]/,"").toLowerCase();
+				var nameTwo = name2.replace(/[\s\-\.]/,"").toLowerCase();
+				
+				var name1_array = nameOne.split("");
+				
+				for(var i = 0;i < name1_array.length;i++){
+					
+					if(nameTwo.match(name1_array[i])){
+						
+						nameTwo = nameTwo.replace(eval("/" + name1_array[i] + "/gi"),"");
+						delete name1_array[i];
+						
+					}
+				}
+				
+				var count = parseInt(nameTwo.length) + parseInt(name1_array.join("").length);
+				var q = count % 6;
+				return q;
+				
+			}
+		</script>
+	</body>
