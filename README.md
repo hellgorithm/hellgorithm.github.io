@@ -1,4 +1,4 @@
 bonakid.github.io
 =================
 
-Creating my website in uhm...imageless manner.haha. 
+Website here > http://stalemartyr.github.io/index.html
